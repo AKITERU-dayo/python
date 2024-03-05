@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>単語追加ページ</title>
+    <link rel="stylesheet" href="css/destyle.css">
+    <link rel="stylesheet" href="css/tango.css">
+    <link rel="stylesheet" href="css/header.css">
+</head>
+
+<body>
+    <script src="/js/tango.js" defer></script>
+    <header>
+        <a href="#"><img id="logo" src="images/logo.png" alt="単語帳のロゴ"></a>
+        <nav>
+            <ul>
+                <li><a href="title.html">タイトル</a></li>
+                <li><a href="#">単語追加</a></li>
+                <li><a href="/cgi-bin/itiran.py">単語一覧</a></li>
+                <li><a href="test.html">テスト</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>単語追加フォーム</h1>
+        <div>
+            <form method="post" action="/cgi-bin/tango.py" id="form">
+                <div class="area">
+                <p><label for="tango">単語</label></p>
+                <input type="text" name="word" id="text" required placeholder="単語を入力してください">
+                </div>
+
+
+                <div class="area">
+                <p><label for="imi">意味</label></p>
+                <input type="text" name="mean" id="text" required placeholder="意味を入力してください">
+                </div>
+
+
+                <div class="area">
+                <p><label for="memo">メモ</label></p>
+                <textarea id="memo" name="memo" placeholder=""></textarea>
+                </div>
+                <p class="button"><input id="button" type="submit" value="単語追加" ></p>
+            </form>
+        </div>
+        <footer>
+            <p><small>&copy; 2024 hew</small></p>
+        </footer>
+    </main>
+</body>
+
+</html>

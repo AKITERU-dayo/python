@@ -1,0 +1,353 @@
+html{
+    font-size: 20px;
+}
+body {
+    line-height: 1.5;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    background-image: url(../images/headerback.png);
+    background-repeat: repeat;
+    background-position: center;
+}
+
+.visuallyhidden {
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    -webkit-clip-path: inset(0px 0px 99.9% 99.9%);
+    clip-path: inset(0px 0px 99.9% 99.9%);
+    overflow: hidden;
+    height: 1px;
+    width: 1px;
+    padding: 0;
+    border: 0
+}
+
+input {
+    border: solid 1px black;
+    border-radius: 5px;
+}
+
+
+textarea {
+    border: solid 1px black;
+    resize: none;
+    width: 300px;
+    height: 200px;
+}
+
+/* nav li {
+    padding: 0.7em 1em;
+    margin: 0.5em 0.5em 0.5em 0.5em;
+    border-radius: 10px;
+}
+
+li>a:hover {
+    border-bottom: solid 2px gray;
+    transition: all .6s;
+} */
+
+/* #logo {
+    height: 80px;
+    width: 80px;
+} */
+
+
+
+
+
+
+h1 {
+    font-size: 2em;
+    text-align: center;
+    margin: 10px;
+}
+
+.function>p {
+    margin: 5px;
+}
+
+#button {
+    padding: 5px;
+}
+
+h2 {
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+#none {
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+dl {
+    width: 100%;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+
+}
+
+.word {
+    display: flex;
+}
+
+#tag_title {
+    display: flex;
+}
+
+#tag_title>p {
+    flex: 0 1 40%;
+    padding-left: 3%;
+}
+
+
+
+dd {
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+    border-top: solid 1px;
+    border-bottom: solid 1px;
+    border-right: solid 0.5px;
+    border-left: solid 0.5px;
+    flex: 0 1 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.1em 2% 2em 2%;
+    padding: 0.5em;
+    font-size: 30px;
+}
+
+
+
+
+
+
+dt {
+    color: black;
+    background-color: rgba(222, 86, 86, 0.201);
+    border-radius: 10px;
+    border-top: solid 1px red;
+    border-bottom: solid 1px red;
+    border-right: solid 0.5px red;
+    border-left: solid 0.5px red;
+    flex: 0 1 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.1em 2% 2em 2%;
+    padding: 0.5em;
+    font-size: 30px;
+}
+
+
+
+
+
+
+
+
+.list {
+    width: 100%;
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#sort {
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+#search {
+    text-align: center;
+    margin: 10px;
+}
+
+#function {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+#searchbutton {
+    padding-top: 5px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+#searchbutton {
+    align-items: center;
+}
+
+#search_box {
+    background-color: #fdfbfbe3;
+}
+
+
+input.btn-radius-solid {
+    border: 1px solid #ccc;
+    background: #f1e767;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fdfbfb), to(#ebedee));
+    background: -webkit-linear-gradient(top, #fdfbfbe3 0%, #ebedee 100%);
+    background: linear-gradient(to bottom, #fdfbfbe3 0%, #ebedee 100%);
+    -webkit-box-shadow: inset 1px 1px 1px #fdfbfbe3;
+    box-shadow: inset 1px 1px 1px #fdfbfbe3;
+}
+
+input.btn-radius-solid:hover {
+    background: -webkit-gradient(linear, left bottom, left top, from(#fdfbfb), to(#ebedee));
+    background: -webkit-linear-gradient(bottom, #fdfbfb 0%, #ebedee 100%);
+    background: linear-gradient(to top, #fdfbfb 0%, #ebedee 100%);
+}
+
+
+#button {
+    margin: 0 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #f1e767;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fdfbfb), to(#ebedee));
+    background: -webkit-linear-gradient(top, #fdfbfbe3 0%, #ebedee 100%);
+    background: linear-gradient(to bottom, #fdfbfbe3 0%, #ebedee 100%);
+    -webkit-box-shadow: inset 1px 1px 1px #fdfbfbe3;
+    box-shadow: inset 1px 1px 1px #fdfbfbe3;
+}
+
+
+#button:hover {
+    background: -webkit-gradient(linear, left bottom, left top, from(#fdfbfb), to(#ebedee));
+    background: -webkit-linear-gradient(bottom, #fdfbfb 0%, #ebedee 100%);
+    background: linear-gradient(to top, #fdfbfb 0%, #ebedee 100%);
+}
+
+
+
+footer {
+    height: 30vh;
+    padding: 10px;
+    background-color: #333;
+    position: relative;
+}
+
+footer>p {
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+
+.pagetop {
+    cursor: pointer;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: .3s;
+    color: #00A6C4;
+    background: #fff;
+
+    opacity: 0;
+}
+
+.pagetop:hover {
+    box-shadow: 0 0 10px #00A6C4;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* @media (max-width: 896px) {
+    .word {
+        display: flex;
+    }
+
+
+} */
+
+
+
+
+/* 1024px以上の幅の場合に適応される */
+@media screen and (max-width: 1024px) {
+    /* 1024pxまでの幅の場合に適応される */
+
+
+}
+
+@media screen and (max-width: 768px) {
+    /* 768pxまでの幅の場合に適応される */
+
+
+    #tag_title{
+        display: none;
+    }
+
+    .word {
+        margin-bottom: 10%;
+        display: block;
+
+    }
+    #memo{
+        height: 8%;
+    }
+    ul a {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* 480pxまでの幅の場合に適応される */
+    #memo{
+        height: 8%;
+    }
+
+    .word {
+        display: block;
+    }
+
+    ul a {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    /* 320pxまでの幅の場合に適応される */
+
+}

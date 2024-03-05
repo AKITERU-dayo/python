@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PY11</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <h1>PY11 Python * Browser</h1>
+    <p>=年齢当てクイズ（Browserバージョン）=</p>
+    <h2>下記を入力して『この内容で調べる』ボタンをクリックしてください。</h2>
+
+    <form action="cgi-bin/test3.py" method="post">
+        <p>あなたのお名前<input type="text" name="name"></p>
+        <p>年齢を3で割った余り<input type="text" name="age3"></p>
+        <p>年齢を5で割った余り<input type="text" name="age5"></p>
+        <p>年齢を7で割った余り<input type="text" name="age7"></p>
+        <button type="submit">この内容で調べる</button>
+    </form>
+
+    </body>
+</html>

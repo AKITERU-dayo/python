@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>クイズゲーム</title>
+        <link rel="stylesheet" href="css/destyle.css">
+        <link rel="stylesheet" type="text/css" href="css/test.css">
+        <link rel="stylesheet" href="css/header.css">
+    </head>
+    <body>
+        <header>
+            <a href="#"><img id="logo" src="images/logo.png" alt="単語帳のロゴ"></a>
+            <nav id="head">
+                <ul>
+                    <li><a href="title.html">タイトル</a></li>
+                    <li><a href="index.html">単語追加</a></li>
+                    <li><a href="/cgi-bin/itiran.py">単語一覧</a></li>
+                    <li><a href="test.html">テスト</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+        <div id="sceneTop" class="top screen">
+            <h1>4択クイズ</h1>
+            <h2>問題数選択</h2>
+            <div id="radioBtn">
+            <span><p><input  type="radio"  value="5"  name="radio" id="radio"  checked>5問</p></span>
+            <span><p><input  type="radio"  value="10" name="radio"  id="radio">10問</p></span>
+            <span><p><input  type="radio"  value="20" name="radio"  id="radio">20問</p></span>
+            </div>
+            <button id="btnStart">Game Start</button>
+        </div>
+
+        <div id="sceneGame" class="game screen">
+            <h1>問題</h1>
+            <p id="textQuestion">:とは</p>
+            <ul id="listAnswer"></ul>
+        </div>
+
+        <div id="sceneResult" class="result screen">
+            <h1>リザルト画面</h1>
+            <p>正解数は<span id="numResult"></span>問です</p>
+            <button id="btnReset">Reset</button>
+        </div>
+
+
+
+        <div id="answer" >
+            <p id="correct"><img src="images/circle.png" alt="正解のマーク"></p>
+            <p id="in_correct"><img src="images/cross.png" alt="不正解のマーク"></p>
+            <button id="next">次へ</button>
+            <button id="last">結果画面へ</button>
+        </div>
+        </main>
+
+        <footer>
+            <p><small>&copy; 2024 hew</small></p>
+        </footer>
+
+
+
+        <script src="js/encoding.min.js"></script>
+        <script src="js/test.js"></script>
+    </body>
+</html>

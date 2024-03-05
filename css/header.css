@@ -1,0 +1,31 @@
+header {
+    background-color: #F4F0E8;
+    border-bottom: solid 1px burlywood;
+    height: 8vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.menu {
+    height: 8vh;
+    display: flex;
+}
+nav li>a{
+    line-height: 30px;
+}
+#logo {
+    height: 80px;
+    width: 80px;
+}
+nav li {
+    padding: 0.7em 1em;
+    margin: 0.5em 0.5em 0.5em 0.5em;
+    border-radius: 10px;
+}
+
+li>a:hover {
+    border-bottom: solid 2px gray;
+    transition: all .6s;
+}
+
